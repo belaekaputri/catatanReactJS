@@ -1,5 +1,5 @@
 import React from "react"
-
+/*class component
 class App extends React.Component{
   render(){
     return(
@@ -9,5 +9,14 @@ class App extends React.Component{
         </div>
     )
   }
+} */
+
+//functional component
+const App = () => {
+    return(
+        <div>
+            <h1>hello world</h1>
+        </div>
+    )
 }
 export default App; 
