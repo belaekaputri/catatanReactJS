@@ -1,20 +1,22 @@
 import React from "react"
-import Header from "./Header"
-import List from "./List"
 //class component
 class App extends React.Component{
+    state ={
+        book:{
+        name: "whoami",
+        author: "mr.x"
+        }
+    }
   render(){
     return(
         <div>
-            <Header/>
-            <List/>
             <h1>Hello World</h1>
-            <p>Sekilas mirip dengan html tapi di dalam div ini adalah JSX yang saratnya ada satu root yaitu div</p>
+           <h3>Judul Buku: { this.state.book.name}</h3>
+           <h3>Author : { this.state.book.author } </h3>
         </div>
     )
   }
 } 
-
 /*functional component
 const App = () => {
     return(

@@ -1,0 +1,41 @@
+state: data yang akan ditampilkan dalam komponen || objek yg menampung sebuah property yg ditampilkan dalam komponen
+state untuk class component
+//state dalam bentuk objek
+class App extends React.Component{
+    state ={
+        book:{
+        name: "whoami",
+        author: "mr.x"
+        }
+    }
+  render(){
+    return(
+        <div>
+            <h1>Hello World</h1>
+           <h3>Judul Buku: { this.state.book.name}</h3>
+           <h3>Author : { this.state.book.author } </h3>
+        </div>
+    )
+  }
+} 
+//state dalam bentuk objek
+
+//state dalam bentuk array
+lass App extends React.Component{
+    state ={
+        books:["php","c++"]
+    }
+  render(){
+    return(
+        <div>
+            <h1>Hello World</h1>
+           {this.state.books.map(item=>
+           <div> 
+            <h3>{item}</h3>
+           </div>
+            )}
+        </div>
+    )
+  }
+} 
+//state dalam bentuk array
